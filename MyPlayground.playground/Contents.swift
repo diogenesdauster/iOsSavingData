@@ -18,11 +18,18 @@ let savedMysteryBytes = Array(savedMysteryData)
 savedMysteryBytes == mysteryBytes
 savedMysteryData == mysteryData
 
+try mysteryData.write(to: mysteryDataURL.appendingPathExtension("txt"))
+
 // String
 
+let string = String(data: savedMysteryData, encoding: .utf8)!
 let stringURL = FileManager.documentDirectoryURL
 .appendingPathComponent("string")
 .appendingPathExtension("txt")
+
+try string.write(to: stringURL, atomically: true, encoding: .utf8)
+try String(contentsOf: stringURL)
+
 
 // Challenge
 
