@@ -38,6 +38,16 @@ let challengeStringURL = URL(fileURLWithPath: challengeString, relativeTo: FileM
 
 challengeStringURL.lastPathComponent
 
+let challengeContent = "Luffy"
+let challengeData = challengeContent.data(using: .utf8)!
+
+try challengeData.write(to: challengeStringURL, options: .atomic)
+
+
+try String(contentsOf: challengeStringURL)
+
+
+
 
 
 
