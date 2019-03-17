@@ -6,7 +6,13 @@ let stringURL = FileManager.documentDirectoryURL
 .appendingPathComponent("string")
 .appendingPathExtension("txt")
 
-stringURL.path
+
+let challengeString = "One Piece"
+let challengeStringURL = URL(fileURLWithPath: challengeString, relativeTo: FileManager.documentDirectoryURL).appendingPathExtension("txt")
+
+challengeStringURL.lastPathComponent
+
+
 
 
 
