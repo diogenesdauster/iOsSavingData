@@ -34,3 +34,10 @@ let images = try [Image](filename: "images")
 images.map{ UIImage(data: $0.pngData) }
 
 //: [Next](@next)
+//: [Previous](@previous)
+
+import Foundation
+
+var str = "Hello, playground"
+
+//: [Next](@next)
