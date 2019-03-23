@@ -12,8 +12,14 @@ let sticker = Sticker(name: "Diógenes Dauster",birthday: DateComponents(calenda
     imageName: "cat")
 
 let anotherSticker = Sticker(name: "Ana Beatriz", birthday: DateComponents(calendar: .current, year: 1992, month: 12, day: 23).date!,
-                             normalizedPosition: CGPoint(x: 0.3, y: 0.5),
+                             normalizedPosition: CGPoint(x: 0.8, y: 0.5),
                              imageName: "dog")
+
+let scene = Scene(width: 900, hasReverseGravity: false, backgroundName: "Space", stickers: [sticker,anotherSticker])
+
+scene.view
+
+
 do {
 //  let jsonURL = URL(fileURLWithPath: sticker.name, relativeTo: FileManager.documentDirectoryURL.appendingPathComponent(Image.Kind.sticker.rawValue)).appendingPathExtension("json")
   let jsonURL = URL(fileURLWithPath: "stickers", relativeTo: FileManager.documentDirectoryURL.appendingPathComponent(Image.Kind.sticker.rawValue)).appendingPathExtension("json")
