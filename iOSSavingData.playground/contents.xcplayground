@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='true'>
+    <pages>
+        <page name='Lesson 1 Document Directory URL'/>
+        <page name='Lesson 2 Paths'/>
+        <page name='Lesson 3 Challenge URLs'/>
+        <page name='Lesson 4 Data &amp; String  &amp; Challenge'/>
+        <page name='Lesson 5 JSON'/>
+        <page name='Lesson 6 Codable Types'/>
+        <page name='Lesson 7 JSON Arrays Challenge'/>
+        <page name='Lesson 8 Hierarchies'/>
+        <page name='Lesson 9 Property Lists Challenge'/>
+    </pages>
+</playground>
